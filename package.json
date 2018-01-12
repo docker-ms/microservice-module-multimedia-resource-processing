@@ -1,0 +1,29 @@
+{
+  "name": "mmrp",
+  "version": "0.0.1",
+  "description": "Multimedia resource processing lib, with features: image resizing, ",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- --check-leaks --timeout 10000 --sort ./test/index.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/v-cube/lib-node-multimediaresourceprocessing.git"
+  },
+  "dependencies": {
+    "bluebird": "~3.5.1",
+    "fluent-ffmpeg": "~2.1.2",
+    "gifsicle": "~3.0.4",
+    "jimp": "~0.2.28",
+    "sharp": "~0.18.4",
+    "shortid": "~2.2.8"
+  },
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "coveralls": "~3.0.0",
+    "istanbul": "~0.4.5",
+    "mocha": "~4.0.1"
+  },
+  "license": "UNLICENSED"
+}
